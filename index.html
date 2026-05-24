@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>raph — terminal</title>
+    <meta name="description" content="Ma page perso — liens" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="crt" aria-hidden="true"></div>
+
+    <main class="terminal-wrap">
+      <div class="terminal" role="document">
+        <header class="term-header">
+          <span class="term-brand">FALA INDUSTRIES</span>
+          <span class="term-model">(TM) TERMLINK PROTOCOL</span>
+          <span class="term-time" id="term-time"></span>
+        </header>
+
+        <div class="term-body">
+          <p class="line dim" id="boot-1">INITIALIZING...</p>
+          <p class="line dim" id="boot-2">ESTABLISHING CONNECTION...</p>
+          <p class="line dim" id="boot-3">ACCESS GRANTED.</p>
+          <p class="line spacer" aria-hidden="true">&nbsp;</p>
+
+          <p class="line">
+            > USER PROFILE // <span class="highlight">raph</span>
+          </p>
+          <p class="line indent">STATUS: online</p>
+          <p class="line indent">BIO: a guy who learn how to code</p>
+          <p class="line spacer" aria-hidden="true">&nbsp;</p>
+
+          <p class="line">> EXTERNAL LINKS — SELECT ENTRY:</p>
+          <nav class="links" aria-label="Liens">
+            <a
+              class="link-entry"
+              data-index="1"
+              href="https://discord.com/users/466338331022852116"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="link-num">[1]</span> DISCORD.EXE
+            </a>
+            <a
+              class="link-entry"
+              data-index="2"
+              href="https://www.instagram.com/caladynamite/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="link-num">[2]</span> INSTAGRAM.DAT
+            </a>
+            <a
+              class="link-entry"
+              data-index="3"
+              href="https://x.com/YOUR_HANDLE"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="link-num">[3]</span> TWITTER.LOG
+            </a>
+            <a
+              class="link-entry"
+              data-index="4"
+              href="https://github.com/raphaelstille"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="link-num">[4]</span> GITHUB.REPO
+            </a>
+          </nav>
+
+          <p class="line spacer" aria-hidden="true">&nbsp;</p>
+          <p class="line dim hint-line">TYPE [1-4] + ENTER — OR CLICK ENTRY</p>
+          <p class="line term-msg dim" id="term-msg" aria-live="polite"></p>
+          <p class="line prompt-line" id="prompt-line">
+            <span class="prompt">&gt;</span>
+            <span id="cmd-input" class="cmd-input"></span
+            ><span class="cursor" aria-hidden="true">█</span>
+          </p>
+        </div>
+
+        <footer class="term-footer">
+          <span>READY.</span>
+          <span>V 2.1.0</span>
+        </footer>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
