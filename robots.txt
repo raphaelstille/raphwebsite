@@ -1,0 +1,8 @@
+
+# je bloque l'embed discord
+
+User-agent: Discordbot
+Disallow: /
+
+User-agent: *
+Allow: /
