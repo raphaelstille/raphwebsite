@@ -16,5 +16,4 @@ A small project—nothing fancy. If you have any feedback or suggestions, feel f
 
 - Mobile integration
 - CSS animations
-- Add more integrations
 
